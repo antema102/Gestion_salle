@@ -1,0 +1,17 @@
+#navbar_css a{
+    
+    color:  white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+#navbar_css a:hover{
+    
+    color:  #FF7500;
+    
+}
+
+.navbar{
+    background-color: #000000;
+
+}

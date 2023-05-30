@@ -1,0 +1,45 @@
+/* Footer.css */
+
+.copyRightStyle {
+    background-color: #000000;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .copyRightStyle p {
+    margin: 0;
+  }
+  
+  .socialLinks {
+    display: flex;
+    align-items: center;
+  }
+  
+  .socialLinks a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .socialLinks a:hover {
+    color: #FF7500;
+  }
+  
+  .socialLinks i {
+    font-size: 25px;
+   
+  }
+.socialLinks .Facebook:hover{
+    color: #1877F2;
+}
+
+.socialLinks .Linkedin:hover{
+   color: #2867B2
+}
