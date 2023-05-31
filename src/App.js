@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import './assets/style/Footer.css';
 import './assets/style/Header.css';
 import { Helmet } from 'react-helmet';
@@ -12,29 +12,29 @@ import Notfound from "./pages/Notfound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import logoIcone from './assets/image/logo.jpg';
 
-class App extends React.Component {
+const App = () => {
 
-    render() {
-        return (
 
-            <BrowserRouter>
-                <Helmet>
-                    <link rel="icon" type="image/x-icon" href={logoIcone} />
-                </Helmet>
-                <Switch>
-                    <Route path="/connection" component={Connection} />
-                    <Route>
-                        <NavBar />
-                        <Switch>
-                            <Route path="/Aprops" component={Apropos} />
-                            <Route path="/" component={Acceuil} exact />
-                            <Route component={Notfound} exact />
-                        </Switch>
-                        <Footer />
-                    </Route>
-                </Switch>
-            </BrowserRouter>
-        )
-    }
+
+    
+    return (
+        <BrowserRouter>
+            <Helmet>
+                <link rel="icon" type="image/x-icon" href={logoIcone} />
+            </Helmet>
+            <Switch>
+                <Route path="/connection" component={Connection} />
+                <Route>
+                    <NavBar />
+                    <Switch>
+                        <Route path="/Aprops" component={Apropos} />
+                        <Route path="/" component={Acceuil} exact />
+                        <Route component={Notfound} exact />
+                    </Switch>
+                    <Footer />
+                </Route>
+            </Switch>
+        </BrowserRouter>
+    )
 }
 export default App;
