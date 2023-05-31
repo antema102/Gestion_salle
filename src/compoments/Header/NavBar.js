@@ -20,7 +20,7 @@ class NavBar extends React.Component {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link ml-4" to="/Apropos" exact={true}>
+                            <NavLink className="nav-link ml-4" to="/Aprops" exact={true}>
                                 <button>
                                     <span>A propos</span>
                                 </button>

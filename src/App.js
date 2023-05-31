@@ -21,7 +21,7 @@ class App extends React.Component {
                     <Route>            
                         <NavBar />
                         <Switch>
-                            <Route path="/aprops" component={Apropos} />  
+                            <Route path="/Aprops" component={Apropos} />  
                             <Route path="/" component={Acceuil} exact />
                             <Route  component={Notfound} exact />
                         </Switch>
