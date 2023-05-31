@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
 import '../assets/style/Notfound.css';
 import NotFoundImage from '../assets/image/error.png';
 
 const Notfound = () => {
+
+  
     return (
         <>
             <div className="not-found-container">
