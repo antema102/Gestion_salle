@@ -1,4 +1,3 @@
-/* Footer.css */
 
 .copyRightStyle {
     background-color: #000000;
@@ -36,10 +35,10 @@
     font-size: 25px;
    
   }
-.socialLinks .Facebook:hover{
+.socialLinks a.Facebook:hover{
     color: #1877F2;
 }
 
-.socialLinks .Linkedin:hover{
+.socialLinks a.Linkedin:hover{
    color: #2867B2
 }
