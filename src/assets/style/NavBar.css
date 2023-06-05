@@ -16,7 +16,7 @@
 
 }
 
-button {
+.nav-item button {
     background: #fff;
     border: none;
     padding: 10px 20px;
@@ -34,7 +34,7 @@ button {
     transform: skew(21deg);
   }
   
-  button::before {
+  .nav-item button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -47,11 +47,11 @@ button {
     transition: all 0.5s;
   }
   
-  button:hover {
+ .nav-item button:hover {
     color: #ff7500;
   }
   
-  button:hover::before {
+  .nav-item button:hover::before {
     left: 0;
     right: 0;
     opacity: 1;
