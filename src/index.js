@@ -5,4 +5,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import App from './App';
 
 
+import Scheduler from './compoments/Scheduler/Scheduler';
+import './compoments/Scheduler/Scheduler.css';
+export default Scheduler;
+
 createRoot(document.getElementById('root')).render(<App/>)

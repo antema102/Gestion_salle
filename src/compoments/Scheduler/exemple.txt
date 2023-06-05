@@ -1,0 +1,48 @@
+import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, Inject, ViewsDirective, ViewDirective, DragAndDrop, Resize} from '@syncfusion/ej2-react-schedule';
+import * as React from 'react';
+import '../assets/style/App.css';
+
+
+
+function Acceuil() {
+  const data = [
+    {
+      Id: 1,
+      Subject: 'Meeting',
+      StartTime: new Date(2023, 5, 31, 10, 0),
+      EndTime: new Date(2023, 5, 31, 12, 30),
+    },
+        {
+      Id: 2,
+      Subject: 'Meeting2',
+      StartTime: new Date(2023, 5, 30, 9, 0),
+      EndTime: new Date(2023, 5, 30, 11 , 30),
+    },
+  ];
+  return (
+    <div>
+      <div>
+        <p>
+        </p>
+      </div>
+        <ScheduleComponent
+      selectedDate={new Date(2023, 5, 31)}
+      eventSettings={{
+        dataSource: data,
+      }}
+    >   
+        <ViewsDirective>
+              <ViewDirective option='Day' startHour='07:00' endHour='18:00' ></ViewDirective>
+              <ViewDirective option='Week' isSelected={true} startHour='07:00' endHour='18:00'></ViewDirective>
+              <ViewDirective option='Agenda'></ViewDirective>
+
+        </ViewsDirective>
+        
+        <Inject services={[Day, Week, WorkWeek, Month, Agenda, DragAndDrop, Resize]} />
+    </ScheduleComponent>
+
+    </div>
+    
+  );
+}
+export default Acceuil;
